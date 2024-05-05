@@ -81,9 +81,9 @@ nav ul a:hover{
     border-radius: 8px;
     text-align: center;
     padding: 50px 0;
-    margin: 0 auto;
-    position: relative;
-    top: 200px;
+    position: relative; /* nổi lên trên */
+    top: 200px; /* trên cách 200px */
+    margin: 0 auto; /* căn giữa*/
 }
 .hero-content h1{
     color: #fefefe;
@@ -101,7 +101,7 @@ nav ul a:hover{
 }
 .hero-content a{
     text-decoration: none;
-    background-color: rbg(255,251,0);
+    background-color: rgb(255,238,0);
     padding: 12px 24px;
     color: black;
     font-size: 24px;
@@ -110,7 +110,7 @@ nav ul a:hover{
     box-shadow: 2px 4px 8px rgb(68,67,67);
 }
 .hero-content a:hover {
-    background-color: rgb(255,238,0);
+    background-color: rgb(255, 200, 0);
 }
 #highlights{
     padding: 24px;
@@ -123,21 +123,54 @@ nav ul a:hover{
     color: rgb(59,65,64);
     margin: 24px 0;
 }
-#destinations{
+/* #highlights .destinations{
     display: flex;
     justify-content: center;
     width: 90%;
-    margin: auto;
+    margin: 0;
     margin-bottom: 40px;
 }
-.destination{
+#hightlights .destination{
     margin: 0 20px;
     text-transform: uppercase;
+    width: 25%;
+}
+.destination{
+    text-align: center;
 }
 .destination img{
     height: 200px;
-    width: 100%;
+    width: 300px;
     box-shadow: 2px 4px 8px rgb(68,67,67);
+    border-radius: 10%;
+}
+.destination p{
+    text-align: center;
+    font-size: 24px;
+    color: rgb(124,123,123);
+    margin: 20px 0;
+}
+.destination p span{
+    color: #33b08c;
+} */
+#highlights .destinations{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0;
+    margin-bottom: 40px;
+}
+#highlights .destination{
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+.destination{
+    margin: 0 20px;
+}
+.destination img{
+    width: 300px;
+    height: 150px;
+    box-shadow: 2px 4px 8px rgb(68, 67, 67);
     border-radius: 10px;
     object-fit: cover;
 }
@@ -147,7 +180,7 @@ nav ul a:hover{
     color: rgb(124,123,123);
     margin: 20px 0;
 }
-.destination strong{
+.destination p span{
     color: #33b08c;
 }
 footer{
